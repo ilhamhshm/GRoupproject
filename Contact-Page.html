@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="Shariah-Design.css">  
+    </head>
+    <body>
+        <div class="top">
+            <div class="topButton">
+                <button class="topButton1">Login</button>
+                <button class="topButton1">About Us</button>
+            </div>
+        <img src="Profile Pic.jpg" id="ProfilePic" alt="Profile Picture Frame" width="50">
+        </div>
+
+        <div class="image">
+            <img src="TC.jpg" id="image" alt=" green circle" width="80">
+        </div>
+        
+        <div class="navigation-design">
+            <nav class="navigation">
+                <button class = navigationButton>Home</button>
+                <button class = navigationButton>Product</button>
+                <button class = navigationButton>Checkout</button>
+                <button class = navigationButton>Contact</button>
+            </nav>
+        </div>
+
+        <p></p>
+        <h1>Contact.</h1>
+        <div class="contact-page">
+            <div class="contact-form">
+                <fieldset>
+                    <form  id="contact-form" action="http://localhost:3000/submit-form" method="POST" >
+                        <label for="Reason">
+                            <span>Select your <strong>Reason</strong></span>
+                        </label>
+                        <select id="Reason" name="Reason">
+                            <option value="Not-Received">Order not received</option>
+                            <option value="Incorrect-Item">Incorrect item received</option>
+                            <option value="Return-Item">Return an item</option>
+                            <option value="Refund">Refund request</option>
+                            <option value="Wrong-Address">Delivery address error</option>
+                            <option value="Wrong-Size">Wrong size order</option>
+                            <option value="Wrong-Color">Wrong color order</option>
+                        </select>
+                            
+                        <div class="form-1">
+                            <label for="Name">
+                                <span aria-label="required">Name* :</span>
+                                <input id="Name" type="text" name="Name" placeholder="Enter Your Name" required>
+                            </label>
+                                
+                            <label for="E-mail">                                    <span aria-label="required">Email*</span> :
+                                <input id="E-mail" type="email" name="E-mail" placeholder="Enter Your Email" required>
+                            </label>
+                        </div>
+                        
+                        <div class="form-2">
+                            <label for="Description">
+                                <textarea id="Description" name="Description" placeholder="Describe more regarding your issue if needed..." ></textarea>
+                            </label> 
+                        </div>
+                        
+                        <div class="form-3">
+                            <label for="Order-Num">
+                                <span aria-label="required">Order Number*:</span>
+                                <input id="Order-Num" type="number" name="Order-Num"  placeholder="Enter the Order Number" required>
+                            </label>
+
+                            <label for="Product">
+                                <span aria-label="required">Product*: </span>
+                                <input id="Product" type="text" name="Product"  placeholder="Enter Product" required>
+                            </label>
+                        </div>
+                        
+                        <button id="send-button" type="submit">Send</button>
+                    </form>
+                </fieldset>
+            </div>
+            
+            <div class="final-words">
+                <p>Thanks for getting in touch. <br>Let us know how we can help<br> for a fast response from our<br> customer service team.</p>
+                <p>Thanks,<br> TechCoast Team<br> Batu Caves , 68100 Selangor</p>
+            </div>
+        </div>
+        <script src="navigation.js"></script>
+    </body>
+</html>
