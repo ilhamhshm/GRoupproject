@@ -1,0 +1,449 @@
+.top{   /*top layer of every page*/
+    border: 2px solid;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86); 
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86);
+}
+#ProfilePic{    /*profile Picture*/
+    border: 2px solid black;
+    margin: 5px;
+}
+.topButton{ /*buttons arrangement in top layer of every page*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+    margin-right: 5px;
+    align-items: center;
+    padding: 5px 0 5px;
+    transition: background-color 3s, color 3s;
+}
+@media (max-width: 767px){  /*buttons arrangement in top layer of every page(mobile)*/
+    .topButton{      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        margin-right: 5px;
+    }
+    .topButton1{ /*buttons in top layer of every page(mobile)*/
+        background-color: rgb(216, 185, 185);
+        height: 50%;
+        font-family: cursive;
+    }
+}
+.topButton1{ /*buttons in top layer of every page*/
+    background-color: rgb(216, 185, 185);
+    height: 100%;
+    font-family: cursive;
+}
+button:hover{   /*every buttons hover effects*/
+    background-color: rgb(49, 218, 46);
+}
+
+
+.image{     /*official image of the Shariah website arrangement*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#image{     /*official image of the Shariah website border*/
+    border: 2px solid black;
+}
+
+#categories{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.navigation-design{     /*Select page section*/
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;   /*decrease(higher number) space inside each box of the table*/
+    width: 100%;
+    background-color: rgb(214, 213, 213);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86); 
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86);
+    
+}
+.navigation{    /*Navigation button arrangement in every page*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    
+}
+.navigationButton{    /*Navigation button in every page*/
+    background-color: rgb(216, 185, 185);
+    font-family: cursive;
+    padding: 8px;
+    font-size: 20px;
+    
+}
+
+
+.Intro{     /*Main section in Home page*/
+    margin: 50px 0 50px;
+    display: flex;
+}
+.main-section{     /*Main section arrangement in Home page*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.main-section > div { /* Style flex items */
+    flex: 1; /* Allows the divs in main-section to take equal space */
+    margin: 0 10px; /* Adds spacing between items (top and right)*/
+}
+.main-Image{     /*Main section in Home page*/
+    border: 2px solid black;
+    max-width: 100%;
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86); 
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86);
+}
+.Preview1{      /*First section of product preview in Home-Page*/
+    background-color: lightgray;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    padding: 5px 20px 0 20px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86); 
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86);
+    background: #D7D7D7;
+    background: -moz-radial-gradient(center, #D7D7D7 0%, #F0F0F0 0%, #BDBDBD 100%);
+    background: -webkit-radial-gradient(center, #D7D7D7 0%, #F0F0F0 0%, #BDBDBD 100%);
+    background: radial-gradient(ellipse at center, #D7D7D7 0%, #F0F0F0 0%, #BDBDBD 100%);
+}
+
+.Product{     
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1199px) and (min-width: 768px){
+    .Product{      
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+                                1fr;
+    }
+}
+@media (max-width: 767px){  
+    .Product{      
+        display: grid;
+        grid-template-columns: 1fr 1fr
+                                1fr 1fr;
+    }
+}
+.Product1{      /*First product of product preview in Home-Page*/
+    background-color: rgb(167, 136, 136);
+    width: 100%;
+    border: 2px solid;
+    max-width: 70%;
+    min-width: 70%;
+}
+.preview-Image{
+    width: 100%;
+    border-bottom: 2px solid;
+}
+.Price{      /*Price of product preview in Home-Page*/
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+.categories-design{     /*Select product category section*/
+    /* border: 2px solid rgb(244, 244, 246); */
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;   /*decrease(higher number) space inside each box of the table*/
+    width: 100%;
+    background-color: rgb(227, 228, 227);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86); 
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.86);
+    
+}
+.categories{    /*Navigation button arrangement in every page*/
+    display: grid;
+    grid-template-columns: 10% 180px 150px 120px 150px;
+    width: 100%;
+}
+#categoryName{
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: -1px 5px 7px #7ab9c5;
+}
+.Product{  /*Product arrangement in Product-Page using grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    gap: 20px;
+    width: 100%;
+    
+}
+@media (max-width: 1199px) and (min-width: 768px){  /*Product arrangement in Product-Page using grid(tablet)*/
+    .Product{      
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 30px;
+        gap: 20px;
+        width: 100%;
+        
+    }
+}
+@media (max-width: 767px){  /*Product arrangement in Product-Page using grid(mobile)*/
+    .Product{      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+        gap: 20px;
+        width: 100%;
+    }
+}
+.Product1-Item{
+    display: flex;
+    background-color: rgb(217, 218, 218);
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    padding: 0 8px 15px 8px;
+    -webkit-box-shadow: 0px 1px 16px 4px rgba(8,53,212,0.86); 
+box-shadow: 0px 1px 16px 4px rgba(8,53,212,0.86);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.Product2-Item{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    padding: 0 8px 15px 8px;
+}
+.PricePP{      /*Price of product preview in Product-Page*/
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 0 0 10px;
+}
+
+/*Checkout Page CSS*/
+.Address{
+    background-color: rgb(214, 213, 213);
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    height: 80px;
+    padding: 0 8px 15px 8px;
+}
+
+.Item-Added{    /*Products Ordered in Checkout-Page*/
+    border: 1px solid black;
+    background-color: rgb(214, 213, 213);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding: 10px;
+    margin: 0 0 20px;
+}
+.Products-Ordered{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Unit-Price{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Amount{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Item-Subtotal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payment-table{     /*Payment Method selection in Checkout-Page*/
+    border: 1px solid black;
+    background-color: rgb(214, 213, 213);
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.Subtotal{
+    border-bottom: 3px solid;
+    margin: 0 0 10px;
+}
+.Total-Payment{     /*Total Payment section in Checkout-Page*/
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    padding: 0 8px  8px;
+    background-color: rgb(214, 213, 213);
+}
+.Subtotal1{
+    margin: 0 0 10px;
+}
+.Order-Button{
+    display: flex;
+    padding: 5px;
+    background-color: rgb(216, 185, 185);
+    width: auto;
+    justify-self: end;
+}
+.bill{      /*Total-Payment arrangement in Checkout-Page*/
+    display: flex;
+    width: auto;
+    justify-content: end;
+}
+
+.Payment-End{       /*Payment-Method and Total-Payment in Checkout-Page*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.Checkout-Grid{     /*Grid Arrangement in Checkout-Page*/
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+@media (max-width: 767px){  
+    .bill{      /*Total-Payment arrangement in Checkout-Page(mobile)*/
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Checkout-Grid{     /*Grid Arrangement in Checkout-Page*/
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/*Contact Page CSS*/
+.contact-page{  /*Contact page arrangement in Checkout-Page*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: auto;
+    gap: 20px;
+}
+.contact-form{      /*Contact form arrangement in Checkout-Page*/
+    order: 2;
+}
+@media (max-width: 767px){  
+    .contact-page{      /*Total-Payment arrangement in Checkout-Page(mobile)*/
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+        gap: 15px;
+    }
+    .contact-form{      /*Contact form arrangement in Checkout-Page(mobile)*/
+        order: 0;
+    }
+}
+.final-words{
+    font-family: cursive;
+}
+fieldset{
+    background-color: rgb(214, 213, 213);
+}
+#send-button{
+    background-color: black;
+    color: white;
+    width: 20%;
+}
+input{
+    background-color: rgb(255, 255, 255);
+}
+select{
+    background-color: rgb(216, 185, 185);
+}
+textarea{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+textarea::placeholder{
+    color: white;
+}
+#Verification{
+    width: 37%;
+}
+#Order-Button:hover{
+    background-color: rgb(54, 177, 30);
+}
+#send-button{
+    background-color: black;
+    color: white;
+    width: 20%;
+}
+#send-button:hover{
+    background-color: rgb(54, 177, 30);
+    width: 20%;
+}
+#Reason{
+    background-color: white;
+}
+#Reason:hover{
+    background-color: rgb(25, 4, 4);
+    color: white;
+}
+.form-1{    /*name and email*/
+    margin: 10px 0 20px 0;
+    display: grid;
+}
+.form-2{    /*Description text area*/
+    margin: 10px 0 20px 10px;
+    display: grid;
+}.form-3{    /*order number and product name*/
+    margin: 10px 0 20px 0;
+    display: grid;
+}
+.radio-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 5px;
+
+}
+.radio-button {
+    display: none;
+}
+.label-button {
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 7px;
+    border: 1.5px solid black;
+    background-color: rgb(216, 185, 185);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+.radio-button:checked + .label-button {
+    background-color: #007BFF;
+    color: white;
+}
+  /* Optionally add hover effect */
+.label-button:hover {
+    background-color: #f0f8ff;
+}

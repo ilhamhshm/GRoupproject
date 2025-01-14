@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Product Page</title>
+        <link rel="stylesheet" href="Shariah-Design.css">
+    </head>
+       
+</head>
+<body>
+    <div class="top">
+        <div class="topButton">
+            <button class="topButton1">Login</button>
+            <button class="topButton1">About Us</button>
+        </div>
+    <img src="Profile Pic.jpg" id="ProfilePic" alt="Profile Picture Frame" width="50">
+    </div>
+
+    <div class="image">
+        <img src="TC.jpg" id="image" alt=" green circle" width="80">
+    </div>
+    
+        <div class="navigation-design">
+            <nav class="navigation">
+                <button class = navigationButton>Home</button>
+                <button class = navigationButton>Product</button>
+                <button class = navigationButton>Checkout</button>
+                <button class = navigationButton>Contact</button>
+            </nav>
+        </div>
+
+        <p></p>
+        <div class="categories-design">
+            <!-- <nav class="categories">
+                <button class = categoriesButton>Sportswear</button>
+                <button class = categoriesButton>Sportshoes</button>
+                <button class = categoriesButton>Sport Item</button>
+                <button class = categoriesButton>Sport-Aid</button>
+            </nav> -->
+            <div class="categories">
+                <label for="searchBox">Search :</label>
+                <input type="text" id="searchBox" placeholder="Search for a product...">
+                <select id="categories">
+                    <option value="all">All Categories</option>
+                    <option value="Sportswear">Sportswear</option>
+                    <option value="Sportshoes">Sportshoes</option>
+                    <option value="Sport Item">Sport Item</option>
+                    <option value="Sport-Aid">Sport-Aid</option>
+                </select>
+                <label for="sort">Sort by Price:</label>
+                <select id="sort">
+                    <option value="none" selected disabled hidden>-</option>
+                    <option value="low-to-high">Low to High</option>
+                    <option value="high-to-low">High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <p></p>
+
+        <h2 id="categoryName">ALL</h2>
+
+        <div class="Product" id="productList">          
+        </div>
+        <script src="navigation.js"></script>
+        <script src="productFilterScript.js"></script>
+    </body>
+</html>

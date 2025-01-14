@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Product Page</title>
+        <link rel="stylesheet" href="Shariah-Design.css">
+    </head>
+    
+    <body>
+        <div class="top">
+            <div class="topButton">
+                <button class="topButton1">Login</button>
+                <button class="topButton1">About Us</button>
+            </div>
+            <img src="Profile Pic.jpg" id="ProfilePic" alt="Profile Picture Frame" width="50">
+        </div>
+
+        <div class="image">
+            <img src="TC.jpg" id="image" alt=" green circle" width="80">
+        </div>
+        
+        <div class="navigation-design">
+            <nav class="navigation">
+                <button class = navigationButton>Home</button>
+                <button class = navigationButton>Product</button>
+                <button class = navigationButton>Checkout</button>
+                <button class = navigationButton>Contact</button>
+            </nav>
+        </div>
+
+        <br>
+        <div class="Address">
+            <strong>Delivery Address</strong>
+            <p>Click the button to get your coordinates.</p>
+            <div id="mapholder"></div>
+            <br>
+            <button id="getLocation">Get Location</button>
+
+            <p id="note"></p>
+        </div>
+
+        <div class="Checkout-Grid">
+            <div class  ="Item-Added">
+                <div class="Products-Ordered">
+                    <h5>Products Ordered</h5>
+                    <div id="cart-items" class="item-details"></div>
+                </div>
+                <div class="Unit-Price"><h5>Unit Price</h5>
+                    <div id="price" class="item-details"></div>
+                </div>
+                <div class="Amount"><h5>Amount</h5>
+                    <div id="amount" class="item-details"></div>
+                </div>
+                <div class="Item-Subtotal"><h5>Item Subtotal</h5>
+                    <div id="itemsub" class="item-details"></div>
+                </div>
+            </div>
+            <div class="Payment-End">
+                <div class="payment-table">
+                    <h3>Payment Method</h3>
+                        <div class="radio-group">
+                            <input type="radio" id="option1" name="options" class="radio-button">
+                            <label for="option1" class="label-button">Online Banking</label>
+                        
+                            <input type="radio" id="option2" name="options" class="radio-button">
+                            <label for="option2" class="label-button">Credit/Debit Card</label>
+                        
+                            <input type="radio" id="option3" name="options" class="radio-button">
+                            <label for="option3" class="label-button">Cash on Delivery</label>
+
+                            <input type="radio" id="option4" name="options" class="radio-button">
+                            <label for="option4" class="label-button">Cash Payment at Pickup Location</label>
+                          </div>
+                </div>
+
+                <div class="bill">
+                    <div class="Total-Payment">
+                        <div class="Subtotal">
+                            <p id="merchSubtotal"><strong>Merchandise Subtotal</strong></p>
+                            <p id="shiptotal"><strong>Shipping Subtotal</strong></p>
+                            <p id="sst"><strong>SST(6%)</strong></p> 
+                        </div>
+                        <div class="Subtotal1"><strong>Total Payment</strong>
+                        <div id="total-payment"></div>
+                        <button class="Order-Button" id="orderButton">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="navigation.js"></script>
+    <script src="checkoutScripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuaQ0kHrGjef4sNRvg88DpHHyy6VuT1_Y"></script>
+    </body>
+</html>
